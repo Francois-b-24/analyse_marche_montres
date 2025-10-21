@@ -1,4 +1,4 @@
-#⌚ Analyse interactive du marché des montres (Chrono24)
+⌚ Analyse interactive du marché des montres (Chrono24)
 
 Ce projet est une application Streamlit multipage permettant d’explorer et d’analyser le marché des montres d’occasion à partir de données récupérées par scraping sur le site Chrono24.
 L’application combine analyses descriptives, détection d’anomalies (bonnes affaires), segmentation du marché (clustering) et exports interactifs.
