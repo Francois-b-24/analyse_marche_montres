@@ -14,7 +14,7 @@ from utils import Nettoyage
 # ------------------------------------------------------------------
 # CONFIG
 # ------------------------------------------------------------------
-DB_PATH = '/Users/f.b/Desktop/Data_Science/Data_Science/Projets/analyse_marche_montres/montre.db'
+DB_PATH = '/Users/f.b/Desktop/Data_Science/preowned-watch-predictor/data/raw/montre.db'
 TABLE = 'montre'
 
 st.set_page_config(page_title="Montres – Statistiques descriptives (Chrono24)", layout="wide")
