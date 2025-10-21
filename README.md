@@ -1,13 +1,13 @@
-⌚ # Analyse interactive du marché des montres (Chrono24)
+#⌚ Analyse interactive du marché des montres (Chrono24)
 
 Ce projet est une application Streamlit multipage permettant d’explorer et d’analyser le marché des montres d’occasion à partir de données récupérées par scraping sur le site Chrono24.
 L’application combine analyses descriptives, détection d’anomalies (bonnes affaires), segmentation du marché (clustering) et exports interactifs.
 
 ⸻
 
-#🚀 Fonctionnalités principales
+🚀 Fonctionnalités principales
 
-##🔎  1. Analyse du marché
+🔎1. Analyse du marché
 	•	KPIs : prix médian, marque la plus représentée.
 	•	Distribution des prix et des diamètres.
 	•	Comparaisons par marque (boxplots, scatter plots).
@@ -15,17 +15,17 @@ L’application combine analyses descriptives, détection d’anomalies (bonnes 
 	•	Top pays vendeurs.
 	•	Évolution temporelle des prix par marque et modèle.
 
-##⚠️ 2. Détection d’anomalies / Bonnes affaires
+⚠️2. Détection d’anomalies / Bonnes affaires
 	•	Détection des annonces atypiques via Isolation Forest.
 	•	Mise en évidence des montres à prix inhabituellement bas (potentielles “bonnes affaires”).
 	•	Histogramme des scores d’anomalie pour visualiser la distribution.
 
-##🧩 #3. Segmentation du marché
+🧩3. Segmentation du marché
 	•	Clustering K-Means sur les caractéristiques (prix, diamètre, année, réserve de marche).
 	•	Visualisation 2D des clusters avec réduction de dimension (PCA).
 	•	Profil médian de chaque cluster.
 
-##📤 4. Export
+📤4. Export
 	•	Tableau interactif des données filtrées.
 	•	Téléchargement des résultats filtrés en CSV ou Excel.
 
