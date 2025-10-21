@@ -36,9 +36,9 @@ class Nettoyage:
     
     def nettoyage_colonnes(self, remplacer_nan=np.nan) -> pd.DataFrame:
         
-        # Suppression de la date de récupération :
-        if 'Date_recup' in self.df.columns:
-            self.df.drop(columns=['Date_recup','fonctions'], inplace=True)
+        # Suppression de la colonne fonctions :
+        if 'fonctions' in self.df.columns:
+            self.df.drop(columns=['fonctions'], inplace=True)
        
         for col in self.df.columns:
             # Supprimer les crochets et apostrophes dans les chaînes de caractères
