@@ -2,3 +2,5 @@ pandas
 numpy
 plotly
 streamlit
+matplotlib
+seaborn
