@@ -29,29 +29,29 @@ L’application combine analyses descriptives, détection d’anomalies (bonnes 
 - tableau interactif des données filtrées.
 - Téléchargement des résultats filtrés en CSV ou Excel.
 
-🛠️ Installation
+## 🛠️ Installation
 
-1. Cloner le dépôt
+### 1. Cloner le dépôt
 
 ```bash
 git clone https://github.com/ton-profil/analyse_marche_montres.git
 cd analyse_marche_montres
 ```
 
-2. Créer et activer un environnement virtuel
+### 2. Créer et activer un environnement virtuel
 
 ```bash
 python -m venv .venv
 source .venv/bin/activate   
 .venv\Scripts\activate      
 ```
-3. Installer les dépendances
+### 3. Installer les dépendances
    
 ```bash
 pip install -r requirements.txt
 ```
 
-4. Lancer l’application
+### 4. Lancer l’application
 
 ```bash
 streamlit run main.py
@@ -70,6 +70,7 @@ streamlit run main.py
 
 ## 📊 Données
 Source : Chrono24 (scraping réalisé entre avril 2024 et août 2025).
+
 Variables principales :
 - marque, modèle
 - prix
