@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    container_name: analyse-montres
+    ports:
+      - "8501:8501"
+    environment:
+      - CHEMIN_BDD=/app/data/propre.xlsx
+    volumes:
+      - ./data:/app/data:ro
+      - ./app:/app/app:ro
+      - ./main.py:/app/main.py:ro

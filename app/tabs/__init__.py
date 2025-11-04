@@ -1,0 +1,1 @@
+from app.tabs import overview, analyses, anomalies, segmentation, regression
