@@ -5,7 +5,7 @@ L’application combine analyses descriptives, détection d’anomalies (bonnes 
 
 ⸻
 
-🚀 Fonctionnalités principales
+#🚀 Fonctionnalités principales
 
 🔎1. Analyse du marché
 	•	KPIs : prix médian, marque la plus représentée.
