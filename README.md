@@ -1,33 +1,30 @@
 # ⌚ Analyse interactive du marché des montres (Chrono24)
 
-Ce projet est une application Streamlit multipage permettant d’explorer et d’analyser le marché des montres d’occasion à partir de données récupérées par scraping sur le site Chrono24.
-L’application combine analyses descriptives, détection d’anomalies (bonnes affaires), segmentation du marché (clustering) et exports interactifs.
+https://watchanalytics.streamlit.app/
 
-⸻
+Ce projet est une application **Streamlit** permettant d’explorer et d’analyser le marché des montres d’occasion à partir de données issues de Chrono24 (scraping réalisé entre avril 2024 et août 2025).
+L’application combine analyses descriptives, détection d’anomalies (“bonnes affaires”), segmentation du marché (clustering) et modélisation du prix.
+
 
 ## 🚀 Fonctionnalités principale
 
 ### 🔎 1. Analyse du marché
 - KPIs : prix médian, marque la plus représentée.
-- Distribution des prix et des diamètres.
-- Comparaisons par marque (boxplots, scatter plots).
-- Répartition des mouvements (automatique, quartz, etc.).
-- Top pays vendeurs.
-- Évolution temporelle des prix par marque et modèle.
+- Visualisations : histogrammes, boxplots, top 10 pays vendeurs.
+- Répartitions : mouvements (automatique, quartz, etc.), matières de boîtier, etc.
 
 ### ⚠️ 2. Détection d’anomalies / Bonnes affaires
-- Détection des annonces atypiques via Isolation Forest.
-- Mise en évidence des montres à prix inhabituellement bas (potentielles “bonnes affaires”).
-- Histogramme des scores d’anomalie pour visualiser la distribution.
+- Identification des montres à prix anormalement bas via Isolation Forest.
+- Visualisation de la distribution des scores d’anomalie.
 
 ### 🧩 3. Segmentation du marché
-- Clustering K-Means sur les caractéristiques (prix, diamètre, année, réserve de marche).
-- Visualisation 2D des clusters avec réduction de dimension (PCA).
-- Profil médian de chaque cluster.
+- Clustering K-Means sur les caractéristiques clés : prix, diamètre, année, réserve de marche.
+- Visualisation 2D des clusters (PCA) et profils médians par cluster.
 
-### 📤 4. Export
-- tableau interactif des données filtrées.
-- Téléchargement des résultats filtrés en CSV ou Excel.
+## 🤖 4. Modélisation du prix
+- Régression linéaire, Ridge, Random Forest, Gradient Boosting, Huber.
+- Mesures de performance (R², MAE, RMSE) et cross-validation.
+
 
 ## 🛠️ Installation
 
@@ -60,27 +57,37 @@ streamlit run main.py
 ## 📂 Structure du projet
 
 ```bash
-├── main.py                 # Application Streamlit principale 
-├── utils/                  # Fonctions de nettoyage & utilitaires
+├── main.py                   lanceur
+├── app/
+│   ├── __init__.py
+│   ├── app.py                # Gestion page et des onglets
+│   ├── config.py             # Configuration (chemins, titres, etc.)
+│   ├── data.py               # Chargement Excel 
+│   ├── utils.py              # Fonctions utilitaires
+│   └── tabs/                 # Modules d’analyse par onglet
+│       ├── overview.py
+│       ├── analyses.py
+│       ├── anomalies.py
+│       ├── segmentation.py
+│       └── regression.py
 ├── data/
-│   └── raw/montre.db       # Base SQLite contenant les données scrappées
-├── requirements.txt        # Liste des dépendances
-└── README.md               # Documentation du projet
+│   └── propre.db / propre.xlsx   # Données source (scraping Chrono24)
+├── requirements.txt
+├── Dockerfile
+├── docker-compose.yml
+└── README.md
 ```
 
 ## 📊 Données
-Source : Chrono24 (scraping réalisé entre avril 2024 et août 2025).
+
+Source : Chrono24
+Période de collecte : avril 2024 → août 2025
 
 Variables principales :
-- marque, modèle
-- prix
-- diamètre
-- année de production
-- mouvement
-- matière du boîtier/bracelet/lunette
-- état, sexe, pays
-- date de récupération
+- marque, modèle, prix, diamètre, année_production
+- mouvement, matière_boitier, matière_bracelet, matière_lunette
+- état, sexe, pays, réserve_de_marche, étanchéité
 
   
 
-Projet réalisé par BOUSSENGUI François, passionné de Data Science et d’horlogerie.
+Projet réalisé par BOUSSENGUI François, passionné de Data Science et d’horlogerie. ⌚
