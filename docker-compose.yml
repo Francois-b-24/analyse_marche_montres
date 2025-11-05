@@ -4,10 +4,20 @@ services:
     build: .
     container_name: analyse-montres
     ports:
-      - "8501:8501"
+      - "8701:8701"
     environment:
       - CHEMIN_BDD=/app/data/propre.xlsx
     volumes:
       - ./data:/app/data:ro
       - ./app:/app/app:ro
       - ./main.py:/app/main.py:ro
+  _nginx_:
+    image: nginx:latest
+    container_name: _nginx_
+    ports:
+      - "82:82"
+      - "445:445"
+    depends_on:
+      - app
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d

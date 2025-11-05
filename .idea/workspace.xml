@@ -4,26 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99313b74-ad98-47ce-8bbe-8774ca847d85" name="Changes" comment="Base.">
-      <change afterPath="$PROJECT_DIR$/app/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/config.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/data.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tabs/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tabs/analyses.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tabs/anomalies.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tabs/overview.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tabs/regression.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/tabs/segmentation.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/utils.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
+    <list default="true" id="99313b74-ad98-47ce-8bbe-8774ca847d85" name="Changes" comment="Evolution de l'app.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/base.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/propre.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/propre.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/dockerfile" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,10 +55,14 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/f.b/Desktop/Data_Science/Data_Science/Projets/analyse_marche_montres/nginx/conf.d&quot;
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/nginx/conf.d" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
     </key>
@@ -166,7 +154,15 @@
       <option name="project" value="LOCAL" />
       <updated>1761081416682</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Evolution de l'app.">
+      <option name="closed" value="true" />
+      <created>1762296247000</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1762296247000</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +179,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initialisation du projet." />
     <MESSAGE value="Base." />
-    <option name="LAST_COMMIT_MESSAGE" value="Base." />
+    <MESSAGE value="Evolution de l'app." />
+    <option name="LAST_COMMIT_MESSAGE" value="Evolution de l'app." />
   </component>
 </project>
