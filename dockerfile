@@ -18,10 +18,10 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
-ENV DB_PATH=/app/data/budget_app.db \
+ENV CHEMIN_BDD=/app/data/propre.xlsx \
     STREAMLIT_SERVER_PORT=8701 \
-    STREAMLIT_SERVER_ADDRESS=2.2.2.2
+    STREAMLIT_SERVER_ADDRESS=0.0.0.0
 
 EXPOSE 8701
 
-CMD ["streamlit", "run", "main.py", "--server.port=8701", "--server.address=2.2.2.2"]
+CMD ["streamlit", "run", "main.py", "--server.port=8701", "--server.address=0.0.0.0"]

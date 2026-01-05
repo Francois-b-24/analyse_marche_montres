@@ -11,13 +11,13 @@ services:
       - ./data:/app/data:ro
       - ./app:/app/app:ro
       - ./main.py:/app/main.py:ro
-  _nginx_:
+  nginx:
     image: nginx:latest
-    container_name: _nginx_
+    container_name: analyse-montres-nginx
     ports:
-      - "82:82"
-      - "445:445"
+      - "80:80"
+      - "443:443"
     depends_on:
       - app
     volumes:
-      - ./nginx/conf.d:/etc/nginx/conf.d
+      - ./_nginx_/conf.d:/etc/nginx/conf.d:ro

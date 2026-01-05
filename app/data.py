@@ -11,7 +11,7 @@ def charger_donnees(db_path: str) -> pd.DataFrame:
         st.error(f"Impossible d'ouvrir la base de données: {e}")
         st.stop()
 
-    # Retirer éventuelle première colonne id/index sans couper la dernière
+    # Retirer éventuelle première colonne id/index
     if len(df.columns) > 0 and str(df.columns[0]).lower() in ("id", "index"):
-        df = df.iloc[:, 1:-1]
+        df = df.iloc[:, 1:]
     return df
