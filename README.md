@@ -2,7 +2,7 @@
 
 https://watchanalytics.streamlit.app/
 
-Ce projet est une application **Streamlit** permettant d'explorer et d'analyser le marché des montres d'occasion à partir de données issues de Chrono24 (scraping réalisé entre avril 2024 et août 2024).
+Ce projet est une application **Streamlit** permettant d'explorer et d'analyser le marché des montres d'occasion à partir de données issues de Chrono24 (scraping réalisé entre avril 2024 et août 2025).
 L'application combine analyses descriptives, détection d'anomalies ("bonnes affaires"), segmentation du marché (clustering) et modélisation du prix.
 
 
